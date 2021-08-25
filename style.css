@@ -1,0 +1,240 @@
+@font-face {
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 400;
+	src:
+		url("/fonts/montserrat-regular.woff2") format("woff2"),
+      url("/fonts/montserrat-regular.woff") format("woff");
+}
+
+@font-face {
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 500;
+	src:
+      url("/fonts/montserrat-500.woff2") format("woff2"), 
+      url("/fonts/montserrat-500.woff") format("woff");
+}
+
+@font-face {
+	font-family: "Playfair Display";
+	font-style: normal;
+	font-weight: 400;
+	src:
+      url("/fonts/playfair-display-regular.woff2") format("woff2"),
+      url("/fonts/playfair-display-regular.woff") format("woff");
+}
+
+@font-face {
+	font-family: "Playfair Display";
+	font-style: normal;
+	font-weight: 700;
+	src:
+      url("/fonts/playfair-display-700.woff2") format("woff2"), 
+      url("/fonts/playfair-display-700.woff") format("woff");
+}
+
+@font-face {
+	font-family: "Playfair Display";
+	font-style: italic;
+	font-weight: 400;
+	src:
+      url("/fonts/playfair-display-italic.woff2") format("woff2"),
+      url("/fonts/playfair-display-italic.woff") format("woff");
+}
+
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: "Montserrat", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 400;
+	color: #AE7C78;
+
+	background-color: #ffffff;
+}
+
+a {
+	text-decoration: none;
+}
+
+.visually-hidden {
+   position: absolute;
+
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+   border: 0;
+   padding: 0;
+
+   white-space: nowrap;
+   clip-path: inset(100%);
+   clip: rect(0 0 0 0);
+   overflow: hidden;
+}
+
+.button {
+	font: inherit;
+
+	text-align: center;
+	vertical-align: middle;
+	color: #ffffff;
+
+	background-color: #D89999;
+	border-radius: 40px;
+}
+
+.site-navigation {
+	list-style: none;
+}
+
+.site-navigation a {
+	color: #AE7C78;
+}
+
+.promo-title {
+	font-family: "Playfair Display", "Goudy Old Style", serif;
+	font-size: 44px;
+	line-height: 59px;
+	font-weight: 400;
+}
+
+.promo-title span {
+	font-style: italic;
+}
+
+.promo-text {
+	font-size: 24px;
+	line-height: 29px;
+}
+
+.features-list {
+	list-style: none;
+}
+
+.feature-item h3 {
+	font-weight: 500;
+}
+
+.section-title {
+	font-family: "Playfair Display", "Goudy Old Style", serif;
+	font-size: 36px;
+	line-height: 48px;
+	font-weight: bold;
+	letter-spacing: 0.02em;
+}
+
+.bestsellers .section-title {
+	text-align: center;
+}
+
+.slider-list {
+	list-style: none;
+}
+
+.slide-title,
+.slide-price {
+	font-weight: 500;
+}
+
+.catalog-list {
+	list-style: none;
+}
+
+.catalog-item {
+	background-color: rgba(174, 124, 120, 0.6);
+	border-radius: 10px;
+}
+
+.catalog-item-link {
+	text-align: center;
+	color: #ffffff;
+}
+
+.special-text-column {
+	background-color: #AE7C78;
+}
+
+.special-text-column b {
+	font-family: "Playfair Display", "Goudy Old Style", serif;
+	font-size: 44px;
+	line-height: 59px;
+	font-weight: normal;
+	letter-spacing: 0.02em;
+	color: #ffffff;
+}
+
+.special-text-column p {
+	font-size: 24px;
+	line-height: 29px;
+	color: #ffffff;
+}
+
+.order-process {
+	text-align: center;
+}
+
+.order-process-list {
+	list-style: none;
+}
+
+.order-process-item h3 {
+	font-weight: 500;
+}
+
+.news-text-column p {
+	font-size: 24px;
+	line-height: 29px;
+}
+
+.social-list {
+	list-style: none;
+}
+
+.reviews {
+	text-align: center;
+}
+
+.reviews-list {
+	list-style: none;
+}
+
+.review-author {
+	font-weight: 500;
+	font-style: normal;
+}
+
+.contacts {
+	background-color: #ffffff;
+}
+
+.contacts .section-title {
+	letter-spacing: normal;
+}
+
+.contacts-list dd {
+	font-weight: 500;
+	margin-left: 0;
+}
+
+.contacts-link {
+	color: #AE7C78;
+}
+
+.footer-wrapper {
+	background-color: #AE7C78;
+}
+
+.footer-navigation {
+	list-style: none;
+}
+
+.footer-navigation a {
+	color: #ffffff;
+}
+
+.social-button-white path {
+	fill: #ffffff;
+}
