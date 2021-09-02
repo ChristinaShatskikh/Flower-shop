@@ -44,6 +44,9 @@
 }
 
 body {
+	min-width: 1440px;
+	min-height: 4470px;
+
 	margin: 0;
 	padding: 0;
 
@@ -75,7 +78,14 @@ a {
    overflow: hidden;
 }
 
+img {
+	max-width: 100%;
+	height: auto;
+}
+
 .button {
+	display: inline-block;
+
 	font: inherit;
 
 	text-align: center;
@@ -86,15 +96,93 @@ a {
 	border-radius: 40px;
 }
 
+.page-header {
+	margin-top: 25px;
+	margin-bottom: 85px;
+
+	border-top: 1px solid #AE7C78;
+	border-bottom: 1px solid #AE7C78;
+}
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.main-navigation {
+	position: relative;
+	z-index: 10;
+}
+
+.main-header-logo {
+	position: absolute;
+	z-index: 5;
+	top: 10px;
+	left: 50%;
+	transform: translateX(-55%);
+
+	width: 100px;
+	height: 33px;
+}
+
 .site-navigation {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+
 	list-style: none;
 }
 
+.site-navigation li {
+	margin-right: 100px;
+}
+
+.site-navigation li:nth-child(3) {
+	margin-right: 225px;
+}
+
+.site-navigation li:nth-child(4),
+.site-navigation li:nth-child(5) {
+	margin-right: 90px;
+}
+
+.site-navigation li:last-child {
+	margin-right: 0;
+}
+
 .site-navigation a {
+	display: block;
+	padding-top: 22px;
+	padding-bottom: 22px;
 	color: #AE7C78;
 }
 
+.grid {
+	display: grid;
+	grid-template-columns: repeat(3, 387px);
+	gap: 20px;
+	align-items: start;
+}
+
+.promo {
+	height: 480px;
+	margin-bottom: 50px;
+}
+
+.promo-text-column .button {
+	padding: 30px 70px;
+}
+
+.promo-img-down {
+	align-self: end;
+}
+
 .promo-title {
+	margin: 0;
+	margin-bottom: 24px;
+
 	font-family: "Playfair Display", "Goudy Old Style", serif;
 	font-size: 44px;
 	line-height: 59px;
@@ -106,19 +194,42 @@ a {
 }
 
 .promo-text {
+	margin: 0;
+	margin-bottom: 64px;
+
 	font-size: 24px;
 	line-height: 29px;
 }
 
+.features {
+	margin-bottom: 80px;
+}
+
 .features-list {
+	margin: 0;
+	padding: 0;
+
 	list-style: none;
 }
 
+.feature-item{
+	padding-left: 102px;
+}
+
 .feature-item h3 {
+	margin: 0;
+	margin-bottom: 8px;
+
 	font-weight: 500;
 }
 
+.feature-item p {
+	margin: 0;
+}
+
 .section-title {
+	margin: 0;
+
 	font-family: "Playfair Display", "Goudy Old Style", serif;
 	font-size: 36px;
 	line-height: 48px;
@@ -126,26 +237,92 @@ a {
 	letter-spacing: 0.02em;
 }
 
+.bestsellers {
+	width: 795px;
+	margin: 0 auto;
+	margin-bottom: 72px;
+}
+
 .bestsellers .section-title {
+	margin-bottom: 65px;
+
 	text-align: center;
 }
 
 .slider-list {
+	margin: 0;
+	padding: 0;
+
 	list-style: none;
+}
+
+.slider-item {
+	display: flex;
+	justify-content: space-between;
+}
+
+.slide-description {
+	width: 387px;
+}
+
+.slide-description .button {
+	padding: 30px 105px;
+}
+
+.slide-image {
+	width: 387px;
+	height: 438px;
 }
 
 .slide-title,
 .slide-price {
+	margin: 0;
+
 	font-weight: 500;
 }
 
+.slide-title {
+	margin-bottom: 20px;
+}
+
+.slide-text,
+.slide-size {
+	margin: 0;
+	margin-bottom: 24px;
+}
+
+.slide-price {
+	margin-bottom: 64px;
+}
+
+.categories {
+	margin-bottom: 80px;
+}
+
 .catalog-list {
+	margin: 0;
+	padding: 0;
+
 	list-style: none;
 }
 
 .catalog-item {
+	width: 387px;
+	height: 442px;
 	background-color: rgba(174, 124, 120, 0.6);
 	border-radius: 10px;
+}
+
+.catalog-item-wedding {
+	background-image: url("img/bg-bouquet-wedding.jpg");
+}
+
+.catalog-item-peonies {
+	background-image: url("img/bg-peonies.jpg");
+}
+
+.catalog-item-assortment {
+	background-image: url("img/bg-assortment.jpg");
 }
 
 .catalog-item-link {
@@ -153,8 +330,20 @@ a {
 	color: #ffffff;
 }
 
-.special-text-column {
+.special {
+	margin-bottom: 80px;
+}
+
+.special .content-wrapper {
+	display: grid;
+	grid-template-columns: 610px 590px;
+
 	background-color: #AE7C78;
+}
+
+.special-text-column {
+	padding-top: 40px;
+	padding-left: 100px;
 }
 
 .special-text-column b {
@@ -172,16 +361,50 @@ a {
 	color: #ffffff;
 }
 
+.special-img-column {
+	height: 391px;
+}
+
 .order-process {
+	margin-bottom: 80px;
+
 	text-align: center;
 }
 
+.order-process .section-title {
+	margin-bottom: 36px;
+}
+
 .order-process-list {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	margin: 0;
+	padding: 0;
+
 	list-style: none;
+}
+
+.order-process-item {
+	width: 285px;
 }
 
 .order-process-item h3 {
 	font-weight: 500;
+}
+
+.news {
+	margin-bottom: 60px;
+}
+
+.news .content-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.news-text-column {
+	width: 485px;
 }
 
 .news-text-column p {
@@ -190,15 +413,57 @@ a {
 }
 
 .social-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	width: 100px;
+
+	margin: 0;
+	padding: 0;
+
 	list-style: none;
+}
+
+.social-list li {
+	width: 26px;
+}
+
+.news-img-column {
+	display: grid;
+	gap: 20px;
+	grid-template-columns: 285px 387px;
+	grid-template-rows: repeat(2, 220px);
+	width: 692px;
+}
+
+.news-img-column img:first-child {
+	grid-column: 1 / 2;
+	grid-row: 1 / 2;
+}
+
+.news-img-column img:nth-child(2) {
+	grid-row: 1 / 4;
 }
 
 .reviews {
+	padding-top: 40px;
+	margin-bottom: 80px;
+
 	text-align: center;
+
+	border: 1px solid #AE7C78;
 }
 
 .reviews-list {
-	list-style: none;
+	display: flex;
+	justify-content: space-between;
+}
+
+.review-item {
+	width: 387px;
+
+	margin-left: 0;
 }
 
 .review-author {
@@ -206,15 +471,54 @@ a {
 	font-style: normal;
 }
 
+.map-contacts .container {
+	position: relative;
+}
+
+.map {
+	height: 645px;
+	overflow: hidden;
+}
+
+.map img {
+	display: block;
+	width: 100%;
+	height: 645px;
+	object-fit: cover;
+	z-index: -1;
+}
+
 .contacts {
+	position: absolute;
+	left: 105px;
+	bottom: 60px;
+	z-index: 100;
+
+	box-sizing: border-box;
+	width: 386px;
+	min-height: 520px;
+
+	padding-top: 40px;
+	padding-left: 35px;
+
 	background-color: #ffffff;
+	border-radius: 12px;
+}
+
+.contacts .section-title {
+	margin-bottom: 42px;
 }
 
 .contacts .section-title {
 	letter-spacing: normal;
 }
 
+.contacts-list dt {
+	margin-bottom: 17px;
+}
+
 .contacts-list dd {
+	margin-bottom: 32px;
 	font-weight: 500;
 	margin-left: 0;
 }
@@ -223,16 +527,46 @@ a {
 	color: #AE7C78;
 }
 
-.footer-wrapper {
+.page-footer {
 	background-color: #AE7C78;
 }
 
+.footer-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-logo {
+	width: 100px;
+	height: 33px;
+
+	margin-top: 25px;
+}
+
 .footer-navigation {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	box-sizing: border-box;
+	width: 795px;
+
+	margin: 0;
+	padding: 0;
+
 	list-style: none;
 }
 
 .footer-navigation a {
+	display: block;
+	padding-top: 30px;
+	padding-bottom: 45px;
+
 	color: #ffffff;
+}
+
+.footer-wrapper .social-list {
+	margin-top: 30px;
 }
 
 .social-button-white path {
