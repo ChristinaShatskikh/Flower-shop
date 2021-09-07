@@ -2,6 +2,7 @@
 	font-family: "Montserrat";
 	font-style: normal;
 	font-weight: 400;
+	font-display: swap;
 	src:
 		url("/fonts/montserrat-regular.woff2") format("woff2"),
       url("/fonts/montserrat-regular.woff") format("woff");
@@ -11,6 +12,7 @@
 	font-family: "Montserrat";
 	font-style: normal;
 	font-weight: 500;
+	font-display: swap;
 	src:
       url("/fonts/montserrat-500.woff2") format("woff2"), 
       url("/fonts/montserrat-500.woff") format("woff");
@@ -20,6 +22,7 @@
 	font-family: "Playfair Display";
 	font-style: normal;
 	font-weight: 400;
+	font-display: swap;
 	src:
       url("/fonts/playfair-display-regular.woff2") format("woff2"),
       url("/fonts/playfair-display-regular.woff") format("woff");
@@ -29,6 +32,7 @@
 	font-family: "Playfair Display";
 	font-style: normal;
 	font-weight: 700;
+	font-display: swap;
 	src:
       url("/fonts/playfair-display-700.woff2") format("woff2"), 
       url("/fonts/playfair-display-700.woff") format("woff");
@@ -38,14 +42,14 @@
 	font-family: "Playfair Display";
 	font-style: italic;
 	font-weight: 400;
+	font-display: swap;
 	src:
       url("/fonts/playfair-display-italic.woff2") format("woff2"),
       url("/fonts/playfair-display-italic.woff") format("woff");
 }
 
 body {
-	/*min-width: 1440px;
-	min-height: 4470px;*/
+	min-width: 1440px;
 
 	margin: 0;
 	padding: 0;
@@ -227,19 +231,19 @@ img {
 }
 
 .feature-item-delivery {
-	background-image: url("img/icon-delivery.svg");
+	background-image: url("../img/icon-delivery.svg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
 
 .feature-item-bouquet {
-	background-image: url("img/icon-bouquet.svg");
+	background-image: url("../img/icon-bouquet.svg");
 	background-repeat: no-repeat;
 	background-position: 30px 0;
 }
 
 .feature-item-photo {
-	background-image: url("img/icon-photo.svg");
+	background-image: url("../img/icon-photo.svg");
 	background-repeat: no-repeat;
 	background-position: 23px 0;
 }
@@ -349,13 +353,13 @@ img {
 }
 
 .bestsellers-prev {
-	background-image: url("img/icon-arrow-prev.svg");
+	background-image: url("../img/icon-arrow-prev.svg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
 
 .bestsellers-next {
-	background-image: url("img/icon-arrow-next.svg");
+	background-image: url("../img/icon-arrow-next.svg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
@@ -372,15 +376,15 @@ img {
 }
 
 .catalog-item-wedding {
-	background-image: url("img/bg-bouquet-wedding.jpg");
+	background-image: url("../img/bg-bouquet-wedding.jpg");
 }
 
 .catalog-item-peonies {
-	background-image: url("img/bg-peonies.jpg");
+	background-image: url("../img/bg-peonies.jpg");
 }
 
 .catalog-item-assortment {
-	background-image: url("img/bg-assortment.jpg");
+	background-image: url("../img/bg-assortment.jpg");
 }
 
 .catalog-item {
@@ -484,25 +488,25 @@ img {
 }
 
 .order-item {
-	background-image: url("img/icon-order.svg");
+	background-image: url("../img/icon-order.svg");
 	background-repeat: no-repeat;
 	background-position: 50% 0;
 }
 
 .consultation-item {
-	background-image: url("img/icon-consultant.svg");
+	background-image: url("../img/icon-consultant.svg");
 	background-repeat: no-repeat;
 	background-position: 50% 0;
 }
 
 .payment-item {
-	background-image: url("img/icon-payment.svg");
+	background-image: url("../img/icon-payment.svg");
 	background-repeat: no-repeat;
 	background-position: 50% 0;
 }
 
 .delivery-item {
-	background-image: url("img/icon-delivery.svg");
+	background-image: url("../img/icon-delivery.svg");
 	background-repeat: no-repeat;
 	background-position: 50% 0;
 }
